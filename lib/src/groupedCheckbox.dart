@@ -93,7 +93,7 @@ class _GroupedCheckboxState extends State<GroupedCheckbox> {
         child: Wrap(
           children: widgetList,
           spacing: 15.0,
-          runSpacing: 50,
+          runSpacing: 0,
         ),
       );
     }
