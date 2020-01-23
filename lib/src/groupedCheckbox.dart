@@ -92,7 +92,7 @@ class _GroupedCheckboxState extends State<GroupedCheckbox> {
       finalWidget = SingleChildScrollView(
         child: Wrap(
           children: widgetList,
-          spacing: 20.0,
+          spacing: 15.0,
         ),
       );
     }
@@ -108,6 +108,7 @@ class _GroupedCheckboxState extends State<GroupedCheckbox> {
             checkColor: widget.checkColor,
             value: selectedListItems.contains(widget.itemList[index]),
             tristate: widget.tristate,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             onChanged: (widget.disabled != null &&
                     widget.disabled.contains(widget.itemList.elementAt(index)))
                 ? null
