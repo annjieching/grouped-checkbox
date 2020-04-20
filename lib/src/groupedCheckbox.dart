@@ -92,7 +92,7 @@ class _GroupedCheckboxState extends State<GroupedCheckbox> {
       finalWidget = SingleChildScrollView(
         child: Wrap(
           children: widgetList,
-          spacing: 15.0,
+          spacing: 0,
           runSpacing: 0,
         ),
       );
